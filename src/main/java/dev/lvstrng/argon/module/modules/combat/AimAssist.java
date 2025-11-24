@@ -1,15 +1,15 @@
-package dev.lvstrng.argon.module.modules.combat;
+package dev.lvstrng.grade.module.modules.combat;
 
-import dev.lvstrng.argon.event.events.HudListener;
-import dev.lvstrng.argon.event.events.MouseMoveListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.MinMaxSetting;
-import dev.lvstrng.argon.module.setting.ModeSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.*;
-import dev.lvstrng.argon.utils.rotation.Rotation;
+import dev.lvstrng.grade.event.events.HudListener;
+import dev.lvstrng.grade.event.events.MouseMoveListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.MinMaxSetting;
+import dev.lvstrng.grade.module.setting.ModeSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.*;
+import dev.lvstrng.grade.utils.rotation.Rotation;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
