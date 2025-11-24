@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.event;
+package dev.lvstrng.grade.event;
 
 import java.util.ArrayList;
 
