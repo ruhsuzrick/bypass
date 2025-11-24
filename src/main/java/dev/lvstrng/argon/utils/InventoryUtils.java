@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.mixin.ClientPlayerInteractionManagerAccessor;
+import dev.lvstrng.grade.mixin.ClientPlayerInteractionManagerAccessor;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Predicate;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class InventoryUtils {
 
