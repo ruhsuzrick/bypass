@@ -1,13 +1,13 @@
-package dev.lvstrng.argon.gui.components;
+package dev.lvstrng.grade.gui.components;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.gui.Window;
-import dev.lvstrng.argon.gui.components.settings.*;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.module.setting.*;
-import dev.lvstrng.argon.utils.*;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.gui.Window;
+import dev.lvstrng.grade.gui.components.settings.*;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.setting.*;
+import dev.lvstrng.grade.utils.*;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 
@@ -15,7 +15,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class ModuleButton {
 	public List<RenderableSetting> settings = new ArrayList<>();
@@ -69,7 +69,7 @@ public final class ModuleButton {
 
 		currentColor = ColorUtils.smoothAlphaTransition(0.05F, toAlpha, currentColor);
 
-		Color toColor = module.isEnabled() ? Utils.getMainColor(255, Argon.INSTANCE.getModuleManager().getModulesInCategory(module.getCategory()).indexOf(module)) : Color.WHITE;
+		Color toColor = module.isEnabled() ? Utils.getMainColor(255, Grade.INSTANCE.getModuleManager().getModulesInCategory(module.getCategory()).indexOf(module)) : Color.WHITE;
 
 		if (defaultColor != toColor)
 			defaultColor = ColorUtils.smoothColorTransition(0.1F, toColor, defaultColor);
