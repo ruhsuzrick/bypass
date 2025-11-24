@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -8,7 +8,7 @@ import net.minecraft.util.math.Box;
 
 import java.util.List;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class CrystalUtils {
 	public static boolean canPlaceCrystalClient(BlockPos block) {
