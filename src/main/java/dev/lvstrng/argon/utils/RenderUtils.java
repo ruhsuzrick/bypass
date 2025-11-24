@@ -1,8 +1,8 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.systems.VertexSorter;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gl.ShaderProgram;
 import net.minecraft.client.gui.DrawContext;
@@ -21,7 +21,7 @@ import java.awt.*;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 
 public final class RenderUtils {
