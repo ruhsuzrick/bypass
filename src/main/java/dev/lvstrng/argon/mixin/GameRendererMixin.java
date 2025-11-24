@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.GameRenderListener;
-import dev.lvstrng.argon.module.modules.misc.Freecam;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.GameRenderListener;
+import dev.lvstrng.grade.module.modules.misc.Freecam;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.render.RenderTickCounter;
