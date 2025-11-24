@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.entity.player.PlayerEntity;
