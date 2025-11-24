@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.font;
+package dev.lvstrng.grade.font;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import lombok.Getter;
