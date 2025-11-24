@@ -1,14 +1,14 @@
-package dev.lvstrng.argon.module.modules.misc;
+package dev.lvstrng.grade.module.modules.misc;
 
-import dev.lvstrng.argon.event.events.ItemUseListener;
-import dev.lvstrng.argon.event.events.TickListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.MathUtils;
-import dev.lvstrng.argon.utils.MouseSimulation;
+import dev.lvstrng.grade.event.events.ItemUseListener;
+import dev.lvstrng.grade.event.events.TickListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.MathUtils;
+import dev.lvstrng.grade.utils.MouseSimulation;
 import net.minecraft.item.Items;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
