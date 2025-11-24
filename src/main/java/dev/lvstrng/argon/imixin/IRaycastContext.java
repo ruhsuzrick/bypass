@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.imixin;
+package dev.lvstrng.grade.imixin;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.Vec3d;
