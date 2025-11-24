@@ -1,12 +1,12 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.imixin.IKeyBinding;
+import dev.lvstrng.grade.imixin.IKeyBinding;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 @Mixin(KeyBinding.class)
 public abstract class KeyBindingMixin implements IKeyBinding {
