@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.module;
+package dev.lvstrng.grade.module;
 
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.utils.EncryptedString;
 
 public enum Category {
 	COMBAT(EncryptedString.of("Combat")),
