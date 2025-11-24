@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.utils.rotation.Rotation;
+import dev.lvstrng.grade.utils.rotation.Rotation;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileUtil;
@@ -10,7 +10,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.*;
 import net.minecraft.world.RaycastContext;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class RotationUtils {
 
