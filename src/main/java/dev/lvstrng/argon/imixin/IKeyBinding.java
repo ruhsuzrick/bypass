@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.imixin;
+package dev.lvstrng.grade.imixin;
 
 public interface IKeyBinding {
 	boolean isActuallyPressed();
