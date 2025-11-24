@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.gui.components.settings;
+package dev.lvstrng.grade.gui.components.settings;
 
-import dev.lvstrng.argon.gui.components.ModuleButton;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.module.setting.Setting;
-import dev.lvstrng.argon.utils.*;
+import dev.lvstrng.grade.gui.components.ModuleButton;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.module.setting.Setting;
+import dev.lvstrng.grade.utils.*;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.math.MathHelper;
 import org.lwjgl.glfw.GLFW;
