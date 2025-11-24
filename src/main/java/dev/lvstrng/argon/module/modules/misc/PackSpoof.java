@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.module.modules.misc;
+package dev.lvstrng.grade.module.modules.misc;
 
-import dev.lvstrng.argon.event.events.PacketReceiveListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.event.events.PacketReceiveListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.utils.EncryptedString;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.c2s.common.ResourcePackStatusC2SPacket;
 import net.minecraft.network.packet.s2c.common.ResourcePackSendS2CPacket;
