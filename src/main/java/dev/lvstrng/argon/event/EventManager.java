@@ -17,7 +17,7 @@ public final class EventManager {
 	}
 
 	public static <L extends Listener, E extends Event<L>> void fire(E event) {
-		EventManager eventManager = Argon.INSTANCE.getEventManager();
+		EventManager eventManager = Grade.INSTANCE.getEventManager();
 		if (eventManager != null) {
 			eventManager.fireImpl(event);
 		}
