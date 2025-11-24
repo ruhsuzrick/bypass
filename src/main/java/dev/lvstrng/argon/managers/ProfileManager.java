@@ -1,11 +1,11 @@
-package dev.lvstrng.argon.managers;
+package dev.lvstrng.grade.managers;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.*;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.*;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -38,8 +38,8 @@ public final class ProfileManager {
 
 				profile = g.fromJson(Files.readString(profilePath), JsonObject.class);
 
-				for (Module module : Argon.INSTANCE.getModuleManager().getModules()) {
-					JsonElement moduleJson = profile.get(String.valueOf(Argon.INSTANCE.getModuleManager().getModules().indexOf(module)));
+				for (Module module : Grade.INSTANCE.getModuleManager().getModules()) {
+					JsonElement moduleJson = profile.get(String.valueOf(Grade.INSTANCE.getModuleManager().getModules().indexOf(module)));
 					if (moduleJson == null || !moduleJson.isJsonObject())
 						continue;
 					JsonObject moduleConfig = moduleJson.getAsJsonObject();
@@ -88,8 +88,8 @@ public final class ProfileManager {
 
 				profile = g.fromJson(Files.readString(profilePath), JsonObject.class);
 
-				for (Module module : Argon.INSTANCE.getModuleManager().getModules()) {
-					JsonElement moduleJson = profile.get(String.valueOf(Argon.INSTANCE.getModuleManager().getModules().indexOf(module)));
+				for (Module module : Grade.INSTANCE.getModuleManager().getModules()) {
+					JsonElement moduleJson = profile.get(String.valueOf(Grade.INSTANCE.getModuleManager().getModules().indexOf(module)));
 					if (moduleJson == null || !moduleJson.isJsonObject())
 						continue;
 					JsonObject moduleConfig = moduleJson.getAsJsonObject();
@@ -146,7 +146,7 @@ public final class ProfileManager {
 				Files.createDirectories(profileFolderPath);
 				profile = new JsonObject();
 
-				for (Module module : Argon.INSTANCE.getModuleManager().getModules()) {
+				for (Module module : Grade.INSTANCE.getModuleManager().getModules()) {
 					JsonObject moduleConfig = new JsonObject();
 
 					moduleConfig.addProperty("enabled", module.isEnabled());
@@ -170,14 +170,14 @@ public final class ProfileManager {
 						}
 					}
 
-					profile.add(String.valueOf(Argon.INSTANCE.getModuleManager().getModules().indexOf(module)), moduleConfig);
+					profile.add(String.valueOf(Grade.INSTANCE.getModuleManager().getModules().indexOf(module)), moduleConfig);
 				}
 				Files.writeString(profilePath, g.toJson(profile));
 			} else {
 				Files.createDirectories(profileFolderPath);
 				profile = new JsonObject();
 
-				for (Module module : Argon.INSTANCE.getModuleManager().getModules()) {
+				for (Module module : Grade.INSTANCE.getModuleManager().getModules()) {
 					JsonObject moduleConfig = new JsonObject();
 
 					moduleConfig.addProperty("enabled", module.isEnabled());
