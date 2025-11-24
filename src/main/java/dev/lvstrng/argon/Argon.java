@@ -1,11 +1,11 @@
-package dev.lvstrng.argon;
+package dev.lvstrng.grade;
 
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.gui.ClickGui;
-import dev.lvstrng.argon.managers.FriendManager;
-import dev.lvstrng.argon.module.ModuleManager;
-import dev.lvstrng.argon.managers.ProfileManager;
-import dev.lvstrng.argon.utils.rotation.RotatorManager;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.gui.ClickGui;
+import dev.lvstrng.grade.managers.FriendManager;
+import dev.lvstrng.grade.module.ModuleManager;
+import dev.lvstrng.grade.managers.ProfileManager;
+import dev.lvstrng.grade.utils.rotation.RotatorManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.*;
 
 @SuppressWarnings("all")
-public final class Argon {
+public final class Grade {
 	public RotatorManager rotatorManager;
 	public ProfileManager profileManager;
 	public ModuleManager moduleManager;
@@ -23,14 +23,14 @@ public final class Argon {
 	public static MinecraftClient mc;
 	public String version = " b1.3";
 	public static boolean BETA; //this was for beta kids but ablue never made it a reality, and you basically paid extra 10 bucks for nothing while ablue spent it all on war thunder to buy pre-historic tanks and estrogen 🤡🤡🤡
-	public static Argon INSTANCE;
+	public static Grade INSTANCE;
 	public boolean guiInitialized;
 	public ClickGui clickGui;
 	public Screen previousScreen = null;
 	public long lastModified;
-	public File argonJar;
+	public File gradeJar;
 
-	public Argon() throws InterruptedException, IOException {
+	public Grade() throws InterruptedException, IOException {
 		INSTANCE = this;
 		this.eventManager = new EventManager();
 		this.moduleManager = new ModuleManager();
@@ -76,9 +76,9 @@ public final class Argon {
 
 	public void setLastModified() {
 		try {
-			this.argonJar = new File(Argon.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+			this.gradeJar = new File(Grade.class.getProtectionDomain().getCodeSource().getLocation().toURI());
 			// Comment out when debugging
-			this.lastModified = argonJar.lastModified();
+			this.lastModified = gradeJar.lastModified();
 		} catch (URISyntaxException ignored) {}
 	}
 }
