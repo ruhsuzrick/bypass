@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.module.setting;
+package dev.lvstrng.grade.module.setting;
 
 public final class BooleanSetting extends Setting<BooleanSetting> {
 	private boolean value;
