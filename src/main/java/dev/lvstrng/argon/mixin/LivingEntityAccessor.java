@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
