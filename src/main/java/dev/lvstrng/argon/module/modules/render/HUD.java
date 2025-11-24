@@ -1,16 +1,16 @@
-package dev.lvstrng.argon.module.modules.render;
+package dev.lvstrng.grade.module.modules.render;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.events.HudListener;
-import dev.lvstrng.argon.gui.ClickGui;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.RenderUtils;
-import dev.lvstrng.argon.utils.TextRenderer;
-import dev.lvstrng.argon.utils.Utils;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.events.HudListener;
+import dev.lvstrng.grade.gui.ClickGui;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.RenderUtils;
+import dev.lvstrng.grade.utils.TextRenderer;
+import dev.lvstrng.grade.utils.Utils;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.PlayerListEntry;
 
@@ -18,7 +18,7 @@ import java.awt.*;
 import java.util.List;
 
 public final class HUD extends Module implements HudListener {
-	private static final CharSequence argon = EncryptedString.of("Argon |");
+	private static final CharSequence grade = EncryptedString.of("Grade |");
 	private final BooleanSetting info = new BooleanSetting(EncryptedString.of("Info"), true);
 	private final BooleanSetting modules = new BooleanSetting("Modules", true)
 			.setDescription(EncryptedString.of("Renders module array list"));
@@ -45,8 +45,8 @@ public final class HUD extends Module implements HudListener {
 
 	@Override
 	public void onRenderHud(HudEvent event) {
-		if (mc.currentScreen != Argon.INSTANCE.clickGui) {
-			final List<Module> enabledModules = Argon.INSTANCE.
+		if (mc.currentScreen != Grade.INSTANCE.clickGui) {
+			final List<Module> enabledModules = Grade.INSTANCE.
 					getModuleManager().
 					getEnabledModules().
 					stream().
@@ -69,7 +69,7 @@ public final class HUD extends Module implements HudListener {
 				if (info.getValue() && mc.player != null) {
 					RenderUtils.unscaledProjection();
 					int argonOffset = 10;
-					int argonOffset2 = 10 + TextRenderer.getWidth(argon);
+					int argonOffset2 = 10 + TextRenderer.getWidth(grade);
 
 					String ping = "Ping: "; // shrimple null check
 					String fps = "FPS: " + mc.getCurrentFps() + " |";
@@ -85,14 +85,14 @@ public final class HUD extends Module implements HudListener {
 						ping += "N/A |";
 					}
 
-					RenderUtils.renderRoundedQuad(context.getMatrices(), new Color(35, 35, 35, 255), 5, 6, argonOffset2 + TextRenderer.getWidth(fps) + TextRenderer.getWidth(ping) + TextRenderer.getWidth(server) + 35, 30, 5, 15);
+					RenderUtils.renderRoundedQuad(context.getMatrices(), new Color(35, 35, 35, 255), 5, 6, gradeOffset2 + TextRenderer.getWidth(fps) + TextRenderer.getWidth(ping) + TextRenderer.getWidth(server) + 35, 30, 5, 15);
 
-					TextRenderer.drawString(argon, context, argonOffset, 12, Utils.getMainColor(255, 4).getRGB());
-					argonOffset += TextRenderer.getWidth(argon);
+					TextRenderer.drawString(grade, context, argonOffset, 12, Utils.getMainColor(255, 4).getRGB());
+					gradeOffset += TextRenderer.getWidth(grade);
 
-					TextRenderer.drawString(fps, context, argonOffset + 10, 12, Utils.getMainColor(255, 3).getRGB());
-					TextRenderer.drawString(ping, context, (argonOffset + 10) + TextRenderer.getWidth(fps) + 10, 12, Utils.getMainColor(255, 2).getRGB());
-					TextRenderer.drawString(server, context, (argonOffset + 10) + TextRenderer.getWidth(fps) + TextRenderer.getWidth(ping) + 20, 12, Utils.getMainColor(255, 1).getRGB());
+					TextRenderer.drawString(fps, context, gradeOffset + 10, 12, Utils.getMainColor(255, 3).getRGB());
+					TextRenderer.drawString(ping, context, (gradeOffset + 10) + TextRenderer.getWidth(fps) + 10, 12, Utils.getMainColor(255, 2).getRGB());
+					TextRenderer.drawString(server, context, (gradeOffset + 10) + TextRenderer.getWidth(fps) + TextRenderer.getWidth(ping) + 20, 12, Utils.getMainColor(255, 1).getRGB());
 
 					RenderUtils.scaledProjection();
 				}
