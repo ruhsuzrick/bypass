@@ -1,8 +1,8 @@
-package dev.lvstrng.argon.module;
+package dev.lvstrng.grade.module;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.module.setting.Setting;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.module.setting.Setting;
 
 import net.minecraft.client.MinecraftClient;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 public abstract class Module implements Serializable {
 	private final List<Setting<?>> settings = new ArrayList<>();
-	public final EventManager eventManager = Argon.INSTANCE.eventManager;
+	public final EventManager eventManager = Grade.INSTANCE.eventManager;
 	protected MinecraftClient mc = MinecraftClient.getInstance();
 	private CharSequence name;
 	private CharSequence description;
