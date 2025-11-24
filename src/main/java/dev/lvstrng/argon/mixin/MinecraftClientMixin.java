@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.*;
-import dev.lvstrng.argon.utils.MouseSimulation;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.*;
+import dev.lvstrng.grade.utils.MouseSimulation;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.Window;
 import net.minecraft.client.world.ClientWorld;
@@ -82,6 +82,6 @@ public class MinecraftClientMixin {
 
 	@Inject(method = "stop", at = @At("HEAD"))
 	private void onClose(CallbackInfo ci) {
-		Argon.INSTANCE.getProfileManager().saveProfile();
+		Grade.INSTANCE.getProfileManager().saveProfile();
 	}
 }
