@@ -1,10 +1,10 @@
-package dev.lvstrng.argon.gui;
+package dev.lvstrng.grade.gui;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.utils.ColorUtils;
-import dev.lvstrng.argon.utils.RenderUtils;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.utils.ColorUtils;
+import dev.lvstrng.grade.utils.RenderUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -14,7 +14,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class ClickGui extends Screen {
 	public List<Window> windows = new ArrayList<>();
@@ -50,8 +50,8 @@ public final class ClickGui extends Screen {
 	@Override
 	public void render(DrawContext context, int mouseX, int mouseY, float delta) {
 		if (mc.currentScreen == this) {
-			if (Argon.INSTANCE.previousScreen != null)
-				Argon.INSTANCE.previousScreen.render(context, 0, 0, delta);
+			if (Grade.INSTANCE.previousScreen != null)
+				Grade.INSTANCE.previousScreen.render(context, 0, 0, delta);
 
 			if (currentColor == null)
 				currentColor = new Color(0, 0, 0, 0);
@@ -124,7 +124,7 @@ public final class ClickGui extends Screen {
 
 	@Override
 	public void close() {
-		Argon.INSTANCE.getModuleManager().getModule(ClickGUI.class).setEnabledStatus(false);
+		Grade.INSTANCE.getModuleManager().getModule(ClickGUI.class).setEnabledStatus(false);
 		onGuiClose();
 	}
 
