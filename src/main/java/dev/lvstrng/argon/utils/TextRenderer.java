@@ -1,11 +1,11 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.font.Fonts;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.font.Fonts;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 
 public final class TextRenderer {
