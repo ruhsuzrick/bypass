@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.event;
+package dev.lvstrng.grade.event;
 
-import dev.lvstrng.argon.Argon;
+import dev.lvstrng.grade.Grade;
 
 
 import java.util.ArrayList;
