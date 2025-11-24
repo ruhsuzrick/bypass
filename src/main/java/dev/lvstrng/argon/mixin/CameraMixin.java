@@ -1,7 +1,7 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.CameraUpdateListener;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.CameraUpdateListener;
 import net.minecraft.client.render.Camera;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
