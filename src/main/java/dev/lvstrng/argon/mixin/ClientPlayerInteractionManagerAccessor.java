@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import org.spongepowered.asm.mixin.Mixin;
