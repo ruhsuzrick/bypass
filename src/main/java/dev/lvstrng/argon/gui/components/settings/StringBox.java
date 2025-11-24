@@ -1,11 +1,11 @@
-package dev.lvstrng.argon.gui.components.settings;
+package dev.lvstrng.grade.gui.components.settings;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.gui.components.ModuleButton;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.module.setting.Setting;
-import dev.lvstrng.argon.module.setting.StringSetting;
-import dev.lvstrng.argon.utils.*;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.gui.components.ModuleButton;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.setting.Setting;
+import dev.lvstrng.grade.module.setting.StringSetting;
+import dev.lvstrng.grade.utils.*;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
