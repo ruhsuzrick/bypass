@@ -1,7 +1,7 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.module.modules.misc.NoBreakDelay;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.module.modules.misc.NoBreakDelay;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
@@ -18,6 +18,6 @@ public class ClientPlayerInteractionManagerMixin {
 			at = @At(value = "FIELD", target = "Lnet/minecraft/client/network/ClientPlayerInteractionManager;blockBreakingCooldown:I", opcode = Opcodes.GETFIELD, ordinal = 0))
 	public int updateBlockBreakingProgress(ClientPlayerInteractionManager clientPlayerInteractionManager) {
 		int cooldown = this.blockBreakingCooldown;
-		return Argon.INSTANCE.getModuleManager().getModule(NoBreakDelay.class).isEnabled() ? 0 : cooldown;
+		return Grade.INSTANCE.getModuleManager().getModule(NoBreakDelay.class).isEnabled() ? 0 : cooldown;
 	}
 }
