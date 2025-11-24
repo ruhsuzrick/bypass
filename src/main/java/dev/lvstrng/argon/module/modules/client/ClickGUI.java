@@ -1,15 +1,15 @@
-package dev.lvstrng.argon.module.modules.client;
+package dev.lvstrng.grade.module.modules.client;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.events.PacketReceiveListener;
-import dev.lvstrng.argon.gui.ClickGui;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.MinMaxSetting;
-import dev.lvstrng.argon.module.setting.ModeSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.events.PacketReceiveListener;
+import dev.lvstrng.grade.gui.ClickGui;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.MinMaxSetting;
+import dev.lvstrng.grade.module.setting.ModeSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.network.packet.s2c.play.OpenScreenS2CPacket;
 import org.lwjgl.glfw.GLFW;
@@ -42,7 +42,7 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 	}
 
 	public ClickGUI() {
-		super(EncryptedString.of("Argon"),
+		super(EncryptedString.of("Grade"),
 				EncryptedString.of("Settings for the client"),
 				GLFW.GLFW_KEY_RIGHT_SHIFT,
 				Category.CLIENT);
@@ -53,12 +53,12 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 	@Override
 	public void onEnable() {
 		eventManager.add(PacketReceiveListener.class, this);
-		Argon.INSTANCE.previousScreen = mc.currentScreen;
+		Grade.INSTANCE.previousScreen = mc.currentScreen;
 
 		if (Argon.INSTANCE.clickGui != null) {
-			mc.setScreenAndRender(Argon.INSTANCE.clickGui);
+			mc.setScreenAndRender(Grade.INSTANCE.clickGui);
 		} else if (mc.currentScreen instanceof InventoryScreen) {
-			Argon.INSTANCE.guiInitialized = true;
+			Grade.INSTANCE.guiInitialized = true;
 		}
 
 		super.onEnable();
@@ -69,11 +69,11 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 		eventManager.remove(PacketReceiveListener.class, this);
 
 		if (mc.currentScreen instanceof ClickGui) {
-			Argon.INSTANCE.clickGui.close();
-			mc.setScreenAndRender(Argon.INSTANCE.previousScreen);
-			Argon.INSTANCE.clickGui.onGuiClose();
+			Grade.INSTANCE.clickGui.close();
+			mc.setScreenAndRender(Grade.INSTANCE.previousScreen);
+			Grade.INSTANCE.clickGui.onGuiClose();
 		} else if (mc.currentScreen instanceof InventoryScreen) {
-			Argon.INSTANCE.guiInitialized = false;
+			Grade.INSTANCE.guiInitialized = false;
 		}
 
 		super.onDisable();
@@ -82,7 +82,7 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 
 	@Override
 	public void onPacketReceive(PacketReceiveEvent event) {
-		if (Argon.INSTANCE.guiInitialized) {
+		if (Grade.INSTANCE.guiInitialized) {
 			if (event.packet instanceof OpenScreenS2CPacket) {
 				if (preventClose.getValue())
 					event.cancel();
