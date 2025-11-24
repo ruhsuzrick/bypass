@@ -1,12 +1,12 @@
-package dev.lvstrng.argon.module.modules.misc;
+package dev.lvstrng.grade.module.modules.misc;
 
-import dev.lvstrng.argon.event.events.CameraUpdateListener;
-import dev.lvstrng.argon.event.events.TickListener;
-import dev.lvstrng.argon.mixin.KeyBindingAccessor;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.event.events.CameraUpdateListener;
+import dev.lvstrng.grade.event.events.TickListener;
+import dev.lvstrng.grade.mixin.KeyBindingAccessor;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.RenderTickCounter;
