@@ -1,10 +1,10 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.ButtonListener;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.modules.client.SelfDestruct;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.ButtonListener;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.modules.client.SelfDestruct;
 import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;
 import org.lwjgl.glfw.GLFW;
