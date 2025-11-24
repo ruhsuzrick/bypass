@@ -1,15 +1,15 @@
-package dev.lvstrng.argon.module;
+package dev.lvstrng.grade.module;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.events.ButtonListener;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.module.modules.client.Friends;
-import dev.lvstrng.argon.module.modules.client.SelfDestruct;
-import dev.lvstrng.argon.module.modules.combat.*;
-import dev.lvstrng.argon.module.modules.misc.*;
-import dev.lvstrng.argon.module.modules.render.*;
-import dev.lvstrng.argon.module.setting.KeybindSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.events.ButtonListener;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.modules.client.Friends;
+import dev.lvstrng.grade.module.modules.client.SelfDestruct;
+import dev.lvstrng.grade.module.modules.combat.*;
+import dev.lvstrng.grade.module.modules.misc.*;
+import dev.lvstrng.grade.module.modules.render.*;
+import dev.lvstrng.grade.module.setting.KeybindSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
 
 import org.lwjgl.glfw.GLFW;
 
@@ -82,7 +82,7 @@ public final class ModuleManager implements ButtonListener {
 	}
 
 	public void addKeybinds() {
-		Argon.INSTANCE.getEventManager().add(ButtonListener.class, this);
+		Grade.INSTANCE.getEventManager().add(ButtonListener.class, this);
 
 		for (Module module : modules)
 			module.addSetting(new KeybindSetting(EncryptedString.of("Keybind"), module.getKey(), true).setDescription(EncryptedString.of("Key to enabled the module")));
