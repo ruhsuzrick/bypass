@@ -1,14 +1,14 @@
-package dev.lvstrng.argon.module.modules.combat;
+package dev.lvstrng.grade.module.modules.combat;
 
-import dev.lvstrng.argon.event.events.HudListener;
-import dev.lvstrng.argon.event.events.PacketSendListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.MinMaxSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.TimerUtils;
+import dev.lvstrng.grade.event.events.HudListener;
+import dev.lvstrng.grade.event.events.PacketSendListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.MinMaxSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.TimerUtils;
 import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.Vec3d;
