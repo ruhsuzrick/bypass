@@ -1,12 +1,12 @@
-package dev.lvstrng.argon.gui.components.settings;
+package dev.lvstrng.grade.gui.components.settings;
 
-import dev.lvstrng.argon.gui.components.ModuleButton;
-import dev.lvstrng.argon.module.setting.MinMaxSetting;
-import dev.lvstrng.argon.module.setting.Setting;
-import dev.lvstrng.argon.utils.ColorUtils;
-import dev.lvstrng.argon.utils.MathUtils;
-import dev.lvstrng.argon.utils.TextRenderer;
-import dev.lvstrng.argon.utils.Utils;
+import dev.lvstrng.grade.gui.components.ModuleButton;
+import dev.lvstrng.grade.module.setting.MinMaxSetting;
+import dev.lvstrng.grade.module.setting.Setting;
+import dev.lvstrng.grade.utils.ColorUtils;
+import dev.lvstrng.grade.utils.MathUtils;
+import dev.lvstrng.grade.utils.TextRenderer;
+import dev.lvstrng.grade.utils.Utils;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
