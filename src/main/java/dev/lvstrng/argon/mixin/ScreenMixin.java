@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.gui.ClickGui;
+import dev.lvstrng.grade.gui.ClickGui;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
