@@ -1,15 +1,15 @@
-package dev.lvstrng.argon.module.modules.combat;
+package dev.lvstrng.grade.module.modules.combat;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.events.AttackListener;
-import dev.lvstrng.argon.event.events.ItemUseListener;
-import dev.lvstrng.argon.event.events.TickListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.KeybindSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.*;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.events.AttackListener;
+import dev.lvstrng.grade.event.events.ItemUseListener;
+import dev.lvstrng.grade.event.events.TickListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.KeybindSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
