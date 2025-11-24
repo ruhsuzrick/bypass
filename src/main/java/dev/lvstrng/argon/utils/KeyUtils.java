@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.lwjgl.glfw.GLFW;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class KeyUtils {
 
