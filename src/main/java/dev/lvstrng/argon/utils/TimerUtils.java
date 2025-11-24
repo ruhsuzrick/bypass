@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
 public final class TimerUtils {
 	private long lastMS;
