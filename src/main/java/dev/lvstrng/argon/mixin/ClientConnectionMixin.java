@@ -1,8 +1,8 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.PacketReceiveListener;
-import dev.lvstrng.argon.event.events.PacketSendListener;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.PacketReceiveListener;
+import dev.lvstrng.grade.event.events.PacketSendListener;
 import net.minecraft.network.ClientConnection;
 import net.minecraft.network.listener.PacketListener;
 import net.minecraft.network.packet.Packet;
