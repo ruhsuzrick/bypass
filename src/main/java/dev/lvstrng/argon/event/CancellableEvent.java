@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.event;
+package dev.lvstrng.grade.event;
 
 public abstract class CancellableEvent<T extends Listener> extends Event<T> {
 	private boolean isCancelled = false;
