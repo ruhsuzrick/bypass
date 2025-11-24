@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.module.modules.client;
+package dev.lvstrng.grade.module.modules.client;
 
 import com.sun.jna.Memory;
 import dev.lvstrng.grade.Grade;
