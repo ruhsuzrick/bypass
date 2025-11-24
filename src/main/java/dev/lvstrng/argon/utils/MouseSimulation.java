@@ -1,14 +1,14 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.mixin.MinecraftClientAccessor;
-import dev.lvstrng.argon.mixin.MouseHandlerAccessor;
+import dev.lvstrng.grade.mixin.MinecraftClientAccessor;
+import dev.lvstrng.grade.mixin.MouseHandlerAccessor;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 
 public final class MouseSimulation {
