@@ -1,11 +1,11 @@
-package dev.lvstrng.argon.gui;
+package dev.lvstrng.grade.gui;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.gui.components.ModuleButton;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.utils.*;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.gui.components.ModuleButton;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.utils.*;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.math.MathHelper;
 import org.lwjgl.opengl.GL11;
