@@ -1,7 +1,7 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.module.modules.client.Friends;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.module.modules.client.Friends;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.entity.Entity;
@@ -25,7 +25,7 @@ import net.minecraft.world.chunk.WorldChunk;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class WorldUtils {
 	public static boolean isDeadBodyNearby() {
