@@ -1,18 +1,18 @@
-package dev.lvstrng.argon.module.modules.client;
+package dev.lvstrng.grade.module.modules.client;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.event.events.AttackListener;
-import dev.lvstrng.argon.event.events.ButtonListener;
-import dev.lvstrng.argon.event.events.HudListener;
-import dev.lvstrng.argon.managers.FriendManager;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.KeybindSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.RenderUtils;
-import dev.lvstrng.argon.utils.TextRenderer;
-import dev.lvstrng.argon.utils.WorldUtils;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.event.events.AttackListener;
+import dev.lvstrng.grade.event.events.ButtonListener;
+import dev.lvstrng.grade.event.events.HudListener;
+import dev.lvstrng.grade.managers.FriendManager;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.KeybindSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.RenderUtils;
+import dev.lvstrng.grade.utils.TextRenderer;
+import dev.lvstrng.grade.utils.WorldUtils;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -41,7 +41,7 @@ public final class Friends extends Module implements ButtonListener, AttackListe
 
     @Override
     public void onEnable() {
-        manager = Argon.INSTANCE.getFriendManager();
+        manager = Grade.INSTANCE.getFriendManager();
 
         eventManager.add(ButtonListener.class, this);
         eventManager.add(AttackListener.class, this);
