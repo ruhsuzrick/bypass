@@ -1,10 +1,10 @@
-package dev.lvstrng.argon.gui.components.settings;
+package dev.lvstrng.grade.gui.components.settings;
 
-import dev.lvstrng.argon.gui.components.ModuleButton;
-import dev.lvstrng.argon.module.setting.ModeSetting;
-import dev.lvstrng.argon.module.setting.Setting;
-import dev.lvstrng.argon.utils.ColorUtils;
-import dev.lvstrng.argon.utils.TextRenderer;
+import dev.lvstrng.grade.gui.components.ModuleButton;
+import dev.lvstrng.grade.module.setting.ModeSetting;
+import dev.lvstrng.grade.module.setting.Setting;
+import dev.lvstrng.grade.utils.ColorUtils;
+import dev.lvstrng.grade.utils.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import org.lwjgl.glfw.GLFW;
 
