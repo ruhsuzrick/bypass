@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.module.setting;
+package dev.lvstrng.grade.module.setting;
 
 public abstract class Setting<T extends Setting<T>> {
 	private CharSequence name;
