@@ -1,7 +1,7 @@
-package dev.lvstrng.argon.font;
+package dev.lvstrng.grade.font;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.utils.EncryptedString;
 import net.minecraft.client.render.*;
 import net.minecraft.client.util.math.MatrixStack;
 
