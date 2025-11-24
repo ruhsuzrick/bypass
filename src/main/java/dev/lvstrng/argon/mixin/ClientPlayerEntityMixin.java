@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
 import com.mojang.authlib.GameProfile;
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.MovementPacketListener;
-import dev.lvstrng.argon.event.events.PlayerTickListener;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.MovementPacketListener;
+import dev.lvstrng.grade.event.events.PlayerTickListener;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerEntity;
