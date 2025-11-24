@@ -1,14 +1,14 @@
-package dev.lvstrng.argon.module.modules.render;
+package dev.lvstrng.grade.module.modules.render;
 
-import dev.lvstrng.argon.event.events.GameRenderListener;
-import dev.lvstrng.argon.event.events.PacketReceiveListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.RenderUtils;
-import dev.lvstrng.argon.utils.WorldUtils;
+import dev.lvstrng.grade.event.events.GameRenderListener;
+import dev.lvstrng.grade.event.events.PacketReceiveListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.RenderUtils;
+import dev.lvstrng.grade.utils.WorldUtils;
 import net.minecraft.block.entity.*;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.RenderTickCounter;
