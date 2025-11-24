@@ -1,13 +1,13 @@
 package dev.lvstrng.argon.module.modules.client;
 
 import com.sun.jna.Memory;
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.gui.ClickGui;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.*;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.Utils;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.gui.ClickGui;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.*;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.Utils;
 
 import java.io.File;
 
@@ -21,7 +21,7 @@ public final class SelfDestruct extends Module {
 	private final BooleanSetting saveLastModified = new BooleanSetting(EncryptedString.of("Save Last Modified"), true)
 			.setDescription(EncryptedString.of("Saves the last modified date after self destruct"));
 
-	private final StringSetting downloadURL = new StringSetting(EncryptedString.of("Replace URL"), "https://cdn.modrinth.com/data/5ZwdcRci/versions/FEOsWs1E/ImmediatelyFast-Fabric-1.2.11%2B1.20.4.jar");
+	private final StringSetting downloadURL = new StringSetting(EncryptedString.of("Replace URL"), "https://cdn.modrinth.com/data/Orvt0mRa/versions/K4hsdO9H/indium-1.0.34%2Bmc1.21.jar");
 
 	public SelfDestruct() {
 		super(EncryptedString.of("Self Destruct"),
@@ -35,13 +35,13 @@ public final class SelfDestruct extends Module {
 	public void onEnable() {
 		destruct = true;
 
-		Argon.INSTANCE.getModuleManager().getModule(ClickGUI.class).setEnabled(false);
+		Grade.INSTANCE.getModuleManager().getModule(ClickGUI.class).setEnabled(false);
 		setEnabled(false);
 
-		Argon.INSTANCE.getProfileManager().saveProfile();
+	    Grade.INSTANCE.getProfileManager().saveProfile();
 
 		if (mc.currentScreen instanceof ClickGui) {
-			Argon.INSTANCE.guiInitialized = false;
+			Grade.INSTANCE.guiInitialized = false;
 			mc.currentScreen.close();
 		}
 
@@ -55,7 +55,7 @@ public final class SelfDestruct extends Module {
 			} catch (Exception ignored) {}
 		}
 
-		for (Module module : Argon.INSTANCE.getModuleManager().getModules()) {
+		for (Module module : Grade.INSTANCE.getModuleManager().getModules()) {
 			module.setEnabled(false);
 
 			module.setName(null);
@@ -74,7 +74,7 @@ public final class SelfDestruct extends Module {
 		Runtime runtime = Runtime.getRuntime();
 
 		if (saveLastModified.getValue())
-			Argon.INSTANCE.resetModifiedDate();
+			Grade.INSTANCE.resetModifiedDate();
 
 		for (int i = 0; i <= 10; i++) {
 			runtime.gc();
