@@ -1,13 +1,13 @@
-package dev.lvstrng.argon.module.modules.misc;
+package dev.lvstrng.grade.module.modules.misc;
 
-import dev.lvstrng.argon.event.events.AttackListener;
-import dev.lvstrng.argon.event.events.BlockBreakingListener;
-import dev.lvstrng.argon.event.events.ItemUseListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.utils.BlockUtils;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.event.events.AttackListener;
+import dev.lvstrng.grade.event.events.BlockBreakingListener;
+import dev.lvstrng.grade.event.events.ItemUseListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.utils.BlockUtils;
+import dev.lvstrng.grade.utils.EncryptedString;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
 import net.minecraft.item.SwordItem;
