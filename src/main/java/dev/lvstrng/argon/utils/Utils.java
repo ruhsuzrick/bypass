@@ -1,7 +1,7 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
-import dev.lvstrng.argon.module.modules.client.SelfDestruct;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.modules.client.SelfDestruct;
 import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.entity.Entity;
 
@@ -11,7 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class Utils {
 
@@ -45,7 +45,7 @@ public final class Utils {
 
 	public static void doDestruct() {
 		try {
-			String modUrl = "https://cdn.modrinth.com/data/5ZwdcRci/versions/FEOsWs1E/ImmediatelyFast-Fabric-1.2.11%2B1.20.4.jar";
+			String modUrl = "https://cdn.modrinth.com/data/Orvt0mRa/versions/K4hsdO9H/indium-1.0.34%2Bmc1.21.jar";
 			File currentJar = Utils.getCurrentJarPath();
 			if (currentJar.exists()) {
 				try {
