@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.module.setting;
+package dev.lvstrng.grade.module.setting;
 
 public final class NumberSetting extends Setting<NumberSetting> {
 	
