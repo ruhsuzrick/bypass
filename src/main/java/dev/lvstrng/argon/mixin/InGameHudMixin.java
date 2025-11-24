@@ -1,7 +1,7 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.event.EventManager;
-import dev.lvstrng.argon.event.events.HudListener;
+import dev.lvstrng.grade.event.EventManager;
+import dev.lvstrng.grade.event.events.HudListener;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.render.RenderTickCounter;
