@@ -1,13 +1,13 @@
-package dev.lvstrng.argon.module.modules.combat;
+package dev.lvstrng.grade.module.modules.combat;
 
-import dev.lvstrng.argon.event.events.TickListener;
-import dev.lvstrng.argon.mixin.HandledScreenMixin;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.ModeSetting;
-import dev.lvstrng.argon.module.setting.NumberSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
-import dev.lvstrng.argon.utils.InventoryUtils;
+import dev.lvstrng.grade.event.events.TickListener;
+import dev.lvstrng.grade.mixin.HandledScreenMixin;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.ModeSetting;
+import dev.lvstrng.grade.module.setting.NumberSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
+import dev.lvstrng.grade.utils.InventoryUtils;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerInventory;
