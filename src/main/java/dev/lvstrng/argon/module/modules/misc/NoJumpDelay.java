@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.module.modules.misc;
+package dev.lvstrng.grade.module.modules.misc;
 
-import dev.lvstrng.argon.event.events.TickListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.event.events.TickListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.utils.EncryptedString;
 import org.lwjgl.glfw.GLFW;
 
 public final class NoJumpDelay extends Module implements TickListener {
