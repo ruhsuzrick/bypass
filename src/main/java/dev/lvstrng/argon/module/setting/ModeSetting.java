@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.module.setting;
+package dev.lvstrng.grade.module.setting;
 
 import java.util.Arrays;
 import java.util.List;
