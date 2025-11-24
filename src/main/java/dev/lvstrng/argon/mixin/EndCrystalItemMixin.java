@@ -1,9 +1,9 @@
-package dev.lvstrng.argon.mixin;
+package dev.lvstrng.grade.mixin;
 
-import dev.lvstrng.argon.Argon;
-import dev.lvstrng.argon.module.modules.render.NoBounce;
-import dev.lvstrng.argon.utils.CrystalUtils;
-import dev.lvstrng.argon.utils.RenderUtils;
+import dev.lvstrng.grade.Grade;
+import dev.lvstrng.grade.module.modules.render.NoBounce;
+import dev.lvstrng.grade.utils.CrystalUtils;
+import dev.lvstrng.grade.utils.RenderUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -24,7 +24,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 @Mixin(EndCrystalItem.class)
 public class EndCrystalItemMixin {
@@ -60,9 +60,9 @@ public class EndCrystalItemMixin {
 
 	@Inject(method = "useOnBlock", at = @At("HEAD"))
 	private void onUse(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
-		NoBounce noBounce = Argon.INSTANCE.getModuleManager().getModule(NoBounce.class);
+		NoBounce noBounce = Grade.INSTANCE.getModuleManager().getModule(NoBounce.class);
 		if (noBounce.isEnabled()) {
-			if (Argon.INSTANCE != null && mc.player != null) {
+			if (Grade.INSTANCE != null && mc.player != null) {
 				ItemStack mainHandStack = mc.player.getMainHandStack();
 
 				if (mainHandStack.isOf(Items.END_CRYSTAL)) {
