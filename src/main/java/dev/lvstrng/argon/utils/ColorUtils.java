@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
 import net.minecraft.util.math.MathHelper;
 
