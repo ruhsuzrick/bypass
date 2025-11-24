@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.utils.rotation.Rotation;
+import dev.lvstrng.grade.utils.rotation.Rotation;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.RespawnAnchorBlock;
@@ -13,7 +13,7 @@ import net.minecraft.util.math.Box;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 
 public final class BlockUtils {
