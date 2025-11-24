@@ -1,4 +1,4 @@
-package dev.lvstrng.argon.managers;
+package dev.lvstrng.grade.managers;
 
 
 import net.minecraft.entity.Entity;
@@ -8,7 +8,7 @@ import net.minecraft.util.hit.EntityHitResult;
 import java.util.HashSet;
 import java.util.Set;
 
-import static dev.lvstrng.argon.Argon.mc;
+import static dev.lvstrng.grade.Grade.mc;
 
 public final class FriendManager {
     private final Set<String> friends;
