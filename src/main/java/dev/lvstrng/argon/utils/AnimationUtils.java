@@ -1,6 +1,6 @@
-package dev.lvstrng.argon.utils;
+package dev.lvstrng.grade.utils;
 
-import dev.lvstrng.argon.module.modules.client.ClickGUI;
+import dev.lvstrng.grade.module.modules.client.ClickGUI;
 
 public final class AnimationUtils {
 	private double value;
