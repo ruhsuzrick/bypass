@@ -1,11 +1,11 @@
-package dev.lvstrng.argon.module.modules.combat;
+package dev.lvstrng.grade.module.modules.combat;
 
-import dev.lvstrng.argon.event.events.AttackListener;
-import dev.lvstrng.argon.event.events.BlockBreakingListener;
-import dev.lvstrng.argon.module.Category;
-import dev.lvstrng.argon.module.Module;
-import dev.lvstrng.argon.module.setting.BooleanSetting;
-import dev.lvstrng.argon.utils.EncryptedString;
+import dev.lvstrng.grade.event.events.AttackListener;
+import dev.lvstrng.grade.event.events.BlockBreakingListener;
+import dev.lvstrng.grade.module.Category;
+import dev.lvstrng.grade.module.Module;
+import dev.lvstrng.grade.module.setting.BooleanSetting;
+import dev.lvstrng.grade.utils.EncryptedString;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.hit.HitResult;
